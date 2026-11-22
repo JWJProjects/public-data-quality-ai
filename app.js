@@ -92,7 +92,7 @@ function render(focus){
  '<main class="main" id="main-content"><div class="hero"><div><div class="eyebrow">'+eye+'</div><h1>'+title+'</h1><p>'+desc+'</p></div><div class="actions">'+button('加入 CSV / JSON','import','upload')+button('匯出報告','go-report','download','primary')+'<input type="file" id="upload" accept=".csv,.json,text/csv,application/json" hidden></div></div>'+
  '<div class="sourcebar"><div class="segment" role="group" aria-label="資料場域">'+Object.entries(PRESETS).map(([k,p])=>'<button type="button" data-profile="'+k+'" class="'+(k===state.key?'active':'')+'" aria-pressed="'+(k===state.key)+'">'+esc(p.title)+'</button>').join('')+'</div><div class="source-name" title="'+esc(sourceLabel)+'"><span class="signal"></span><b>'+state.sources.length+' 個來源：</b>'+esc(sourceLabel)+'</div></div>'+
  (state.error?'<p class="notice error" role="alert">'+esc(state.error)+'</p>':'')+widgets[state.tab](a)+
- '<p class="foot">適用於有欄位契約、可取得合法來源且需人工驗收的整合流程。此為作品集原型，不代表已通過機關驗收。'+(!state.demo?' 新上傳檔案未用來重新擬合模型。':'')+'</p></main></div></div>';
+ '<p class="foot">適用於有欄位契約、可取得合法來源且需人工驗收的整合流程。本系統為需求方案展示，未經機關驗收。'+(!state.demo?' 新上傳檔案未用來重新擬合模型。':'')+'</p></main></div></div>';
  if(focus)document.querySelector(focus)?.focus({preventScroll:true});
 }
 function switchTab(tab){state.tab=tab;render('[data-tab="'+tab+'"]');window.scrollTo(0,0);}

@@ -10,6 +10,8 @@
 
 [實際雙檔整併](docs/assets/06-integrated.jpg) · [報告與匯出](docs/assets/04-export.jpg) · [390 px 行動版](docs/assets/05-mobile.jpg) · [需求、交付與驗收矩陣](docs/REQUIREMENTS.md)
 
+新版拉開工具列、資料表與差異檢視器的間距；桌面維持緊湊資料列，手機則把每列摘要和操作按鈕分開，便於逐筆覆核。
+
 ## 使用情境與流程
 
 | 情境 | 常見資料問題 | 方案目標 |
